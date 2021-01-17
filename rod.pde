@@ -1,5 +1,8 @@
 class Rod {
+// x position of rod  
   float x;
+  
+  
   float top;
   float bottom;
   float w=40;
@@ -22,6 +25,7 @@ class Rod {
     }
     return false;
   }
+ // update x position by -3 in order to move left side 
   void update() {
 
     x-=3;
@@ -29,6 +33,7 @@ class Rod {
     //  rod.remove(index);
     //}
   }
+ // function to show the rod 
   void show(boolean hit) {
     if (firstOccur ) {
       r=floor(random(0, 255));
